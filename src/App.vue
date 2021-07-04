@@ -1,32 +1,55 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <v-app-bar app color="primary" dark>
+      <div class="d-flex align-center">
+        <v-icon large :color="icon.color"> {{ icon.name }} </v-icon>
+        <v-toolbar-title>{{ title }}</v-toolbar-title>
+      </div>
+
+      <v-spacer></v-spacer>
+      <v-btn icon v-on:click="toggleDarkMode">
+        <v-icon>mdi-theme-light-dark</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+import Vue from "vue";
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default Vue.extend({
+  name: "App",
+  data: () => ({}),
+  beforeCreate() {
+    document.title = `E-Portfolio: ${this.$store.state.profile.userData.name}`;
+  },
+  computed: {
+    title() {
+      return this.$store.state.navbar.title;
+    },
+    icon() {
+      return this.$store.state.navbar.icon;
+    },
+  },
+  methods: {
+    toggleDarkMode: function () {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
+    },
+  },
+  mounted() {
+    const theme = localStorage.getItem("dark_theme");
+    if (theme) {
+      if (theme == "true") {
+        this.$vuetify.theme.dark = true;
+      } else {
+        this.$vuetify.theme.dark = false;
+      }
     }
-  }
-}
-</style>
+  },
+});
+</script>
