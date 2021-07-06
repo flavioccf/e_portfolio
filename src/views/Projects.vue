@@ -7,7 +7,7 @@
       <v-divider></v-divider>
       <v-list>
         <span v-for="(project, index) in projects" :key="project.link">
-          <v-list-item to="/">
+          <v-list-item :to="`/projects/${index}`">
             <v-list-item-icon>
               <v-icon>mdi-cursor-default-click-outline</v-icon>
             </v-list-item-icon>

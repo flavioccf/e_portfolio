@@ -18,15 +18,15 @@ export default new Vuetify({
         error: "#f44336",
         warning: "#ffc107",
         info: "#ffeb3b",
-        success: "#4caf50"
-        },
-        dark: {
-          primary: "#9c27b0",
-          primary_dark: "#ddd1e8",
-          secondary_light: "#280f3d",
-          gradient1: "#280f3d",
-          gradient2: "#9c27b0",
-        }
-    }
-  }
+        success: "#4caf50",
+      },
+      dark: {
+        primary: "#9c27b0",
+        primary_dark: "#ddd1e8",
+        secondary_light: "#280f3d",
+        gradient1: "#280f3d",
+        gradient2: "#9c27b0",
+      },
+    },
+  },
 });

@@ -6,7 +6,12 @@
         @click="drawer = true"
       ></v-app-bar-nav-icon>
       <div class="d-flex align-center">
-        <v-toolbar-title>{{ title }}</v-toolbar-title>
+        <v-toolbar-title
+          ><small style="color: var(--v-primary_dark-base); font-size: 0.85rem"
+            ><strong>e-Portfolio</strong></small
+          ><br />
+          {{ title }}</v-toolbar-title
+        >
       </div>
 
       <v-spacer></v-spacer>
@@ -26,8 +31,8 @@
           v-model="group"
           active-class="deep-purple--text text--accent-4"
         >
-          <v-list-item>
-            <v-list-item-title>E-Portfolio</v-list-item-title>
+          <v-list-item disabled>
+            <v-list-item-title>e-Portfolio</v-list-item-title>
           </v-list-item>
           <v-divider></v-divider>
           <v-list-item to="/">
@@ -65,7 +70,6 @@ export default Vue.extend({
   },
   computed: {
     currentPath() {
-      console.log(this.$router.currentRoute.path);
       return this.$router.currentRoute.path;
     },
     title() {
