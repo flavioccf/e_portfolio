@@ -1,4 +1,12 @@
-# e_portfolio
+# E-Portfolio
+<p align="center">
+<img src="https://raw.githubusercontent.com/flavioccf/e_portfolio/main/src/assets/logo.png" align="center" />
+</p>
+Project to create a customizable professional <strong>e-portfolio</strong>
+
+- Vue.js
+- Vuex
+- Vue Router
 
 ## Project setup
 ```
@@ -15,7 +23,7 @@ npm run serve
 npm run build
 ```
 
-### Run your end-to-end tests
+### Run your end-to-end tests (TBD)
 ```
 npm run test:e2e
 ```
@@ -24,6 +32,3 @@ npm run test:e2e
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
