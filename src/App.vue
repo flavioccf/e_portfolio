@@ -52,7 +52,9 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <router-view />
+      <transition name="fade">
+        <router-view />
+      </transition>
     </v-main>
   </v-app>
 </template>
@@ -98,6 +100,13 @@ export default Vue.extend({
 });
 </script>
 <style lang="scss">
+.fade-enter-active {
+  transition: all 0.8s ease;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 #app {
   background: rgb(40, 15, 61);
   background: linear-gradient(
