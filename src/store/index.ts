@@ -20,7 +20,8 @@ export default new Vuex.Store({
         position: "Product Manager",
         about: {
           title: "About Me!",
-          text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus.</p>",
+          text: `<p>One of the greatest pleasures of my routine is to connect with people, whether to plan a sales action, put future campaigns on the agenda, analyze the results of past actions, or even focus on solutions to problems that arise along the way. The day-to-day of the International Education market is just like that, dynamic, and that's what I like the most!</p>
+          <p>I hold a Bachelor's Degree in Tourism and I am currently taking a Post Degree Diploma in Business Administration at Langara College, in Vancouver, Canada. During my academic path, I was able to be a member of the Junior Enterprise and a volunteer for Langara Community and AIESEC, one of the largest NGOs in the world.</p>`,
         },
         social: [
           {
@@ -50,14 +51,15 @@ export default new Vuex.Store({
         company: "SEDA Intercambios",
         link: `<iframe width="100%" height="300" src="https://www.youtube.com/embed/9y4ItOLf0kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
         isEmbed: true,
-        about: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus.</p>`,
+        about: `<p>In 2020 I had the opportunity to interview a member of the Consulate of Canada in Brazil, promoting the destination to potential international students and sharing relevant information on how the country was dealing with COVID19 and International Education.</p>`,
       },
       {
-        name: "Webinar: Onboarding Canada",
+        name: "Training: Onboarding Canada",
         company: "SEDA Intercambios",
         link: "https://www.youtube.com/playlist?list=PLLpWlYYCGZTom3-0qv9-K2EHikTbuoUGl",
         isEmbed: false,
-        about: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus.</p>`,
+        about: `<p>In 2021 I was responsible for creating and applying three days of training about International Education opportunities in Canada.</p>
+        <p>This training was developed to provide detailed information to reduce the lead time for Q&A, increase sales, and speed up selling processes.</p>`,
       },
     ],
   },

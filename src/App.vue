@@ -9,7 +9,7 @@
         <v-toolbar-title
           ><small style="color: var(--v-primary_dark-base); font-size: 0.85rem"
             ><strong>e-Portfolio</strong></small
-          ><br />
+          >
           {{ title }}</v-toolbar-title
         >
       </div>

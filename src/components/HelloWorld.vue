@@ -28,7 +28,9 @@
         <v-row justify="center">
           <v-col v-for="smedia in profile.social" :key="smedia.url" cols="3">
             <a :href="smedia.url" target="_blank"
-              ><v-icon large :color="smedia.color">{{ smedia.icon }}</v-icon></a
+              ><v-icon x-large :color="smedia.color">{{
+                smedia.icon
+              }}</v-icon></a
             >
           </v-col>
         </v-row>
