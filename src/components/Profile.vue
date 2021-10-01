@@ -43,7 +43,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "HelloWorld",
+  name: "Profile",
   data: () => ({}),
   computed: {
     profile() {
@@ -66,5 +66,8 @@ hr {
 .position {
   margin: 1rem;
   color: var(--v-primary-base);
+}
+.v-avatar {
+  border: 0.7rem solid;
 }
 </style>
