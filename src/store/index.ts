@@ -63,6 +63,14 @@ export default new Vuex.Store({
         about: `<p>In 2021 I was responsible for creating and applying three days of training about International Education opportunities in Canada.</p>
         <p>This training was developed to provide detailed information to reduce the lead time for Q&A, increase sales, and speed up selling processes.</p>`,
       },
+      {
+        name: "Business Report: International Education in Canada",
+        company: "Langara College - Student Project",
+        link: "",
+        isEmbed: false,
+        about:
+          "<p>In April 2021, I Developed a research study about the International Education industry in Canada, gathering up-to-date data and comparing it with historical numbers of the past years, which helped draw an analysis of the market growth and trends.</p><p>This project contributed to the development of my research, writing, proofreading, and data analysis skills.</p>",
+      },
     ],
   },
   mutations: {},
