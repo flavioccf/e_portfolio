@@ -4,6 +4,8 @@
 </p>
 Project to create a customizable professional <strong>e-portfolio</strong>
 
+Check a sample project [Here](https://e-portfolio-jessica-cunha.vercel.app/)
+
 - Vue.js
 - Vuex
 - Vue Router
